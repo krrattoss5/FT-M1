@@ -2,10 +2,7 @@
 
 function BinarioADecimal(num) {
   // tu codigo aca
-  var revez = []
-  for(var i = 0;i<num.length;i++){
-    revez.unshift(num[i])
-  }
+  var revez = num.split("").reverse();
   var decimal = 0
   for(var o = 0;o<revez.length;o++){
     decimal = decimal + revez[o] * Math.pow(2,o)

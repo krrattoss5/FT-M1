@@ -11,7 +11,26 @@
   El ábrol utilizado para hacer los tests se encuentra representado en la imagen bst.png dentro del directorio homework.
 */
 
-function BinarySearchTree() {}
+function BinarySearchTree(value) {
+  this.value = value;
+  this.left = null;
+  this.right = null;
+}
+
+BinarySearchTree.prototype.size = function(){
+  var suma = 
+  if(!this.data) return suma;
+
+  if(this.data && !this.left && !this.right) return suma++;
+
+  if(this.data && this.left && this.right) return this.left.size();
+};
+
+BinarySearchTree.prototype.insert = function(value){};
+
+BinarySearchTree.prototype.contains = function(){};
+BinarySearchTree.prototype.depthFirstForEach = function(){};
+BinarySearchTree.prototype.breadthFirstForEach = function(){};
 
 // No modifiquen nada debajo de esta linea
 // --------------------------------
